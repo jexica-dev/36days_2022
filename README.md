@@ -1,6 +1,6 @@
 # 36daysoftype
 
-**#36daysoftype** is a website designed and created to .
+**#36daysoftype** is a portfolio website designed for a collection of letters created for the online challenge: #36daysoftype 2022.
 
 [Deployed](https://website.com/)
 
@@ -38,7 +38,7 @@
 
 #### Wireframes
 
-![Desktop](https://i.imgur.com/jQTapvn.png)
+![Desktop](https://i.imgur.com/0jzFWue.png)
 
 Desktop View
 
@@ -52,7 +52,7 @@ Mobile View -->
 
 #### Component Tree
 
-![Component Tree Sample](https://i.imgur.com/bMVI9Xo.png)
+![Component Tree Sample](https://i.imgur.com/3KYzqwO.png)
 
 
 #### Component Architecture
@@ -99,7 +99,7 @@ Mobile View -->
 | -------------------  | :------: | :------------: | :-----------: | :---------: |
 | Wireframe + Diagrams |    M     |     3 hrs      |     5 hrs     |    X hrs    |
 |   Create Components  |    H     |     3 hrs      |     3 hrs     |    X hrs    |
-|    Create Screens    |    H     |     3 hrs      |     3 hrs     |    X hrs    |
+|   Create Screens     |    H     |     3 hrs      |     3 hrs     |    X hrs    |
 | Style+ Functionality |    H     |     6 hrs      |     3 hrs     |    X hrs    |
 | TOTAL                |          |    12 hrs      |    14 hrs     |    XX hrs   |
 
@@ -111,7 +111,7 @@ Mobile View -->
 
 ## Post-MVP
 
-- Adding more playful, interactive functionality to the letter buttons. 
+- Adding more movement and playful interactive functionality to the letter buttons. 
 
 ***
 
