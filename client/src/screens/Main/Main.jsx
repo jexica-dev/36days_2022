@@ -5,8 +5,6 @@ import * as colorClasses from "../../utils/colorClasses";
 // import useEffect from "react";
 
 export default function Main() {
-
-
   // let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("").reverse().join("");
   // let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("").reverse().join("");
   // let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -16,19 +14,15 @@ export default function Main() {
 
   for (let letter of alphabet) {
     letterButtons.push(
-      <>
-        <div>
-          <ButtonMain
-            buttonClass={
-              colorClasses.buttonClasses[
-                i++ % colorClasses.buttonClasses.length
-              ]
-            }
-          >
-            Letter {letter}
-          </ButtonMain>
-        </div>
-      </>
+      <div key={letter}>
+        <ButtonMain
+          buttonClass={
+            colorClasses.buttonClasses[i++ % colorClasses.buttonClasses.length]
+          }
+        >
+          Letter {letter}
+        </ButtonMain>
+      </div>
     );
   }
   return (
