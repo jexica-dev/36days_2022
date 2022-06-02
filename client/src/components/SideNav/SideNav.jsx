@@ -1,19 +1,9 @@
 import { React, useState } from "react";
 import { Link } from "react-router-dom";
 
-export default function SideNav() {
-  // const [dayMode, setDayMode] = useState(true);
+export default function SideNav(props) {
   const [isShown, setIsShown] = useState(true);
   const [isShown1, setIsShown1] = useState(true);
-  const [open, setOpen] = useState(false);
-
-  const handleNight = () => {
-    setOpen(true);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
 
   return (
     <>
@@ -21,7 +11,10 @@ export default function SideNav() {
         <ul>
           <Link to="/">
             <li
-              onClick={handleNight}
+              onClick={() =>
+                props.setDayMode((prevState) => !prevState) +
+                console.log(props.dayMode)
+              }
               onMouseEnter={() => setIsShown(false)}
               onMouseLeave={() => setIsShown(true)}
             >

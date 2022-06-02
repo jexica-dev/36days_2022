@@ -4,11 +4,12 @@ import Letter from "./screens/Letter/Letter";
 import Layout from "./components/Layout/Layout";
 import About from "./screens/About/About";
 import { useEffect, useState } from "react";
-import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   const [dayMode, setDayMode] = useState(true);
 
+  
   // useEffect(() => {
   //   const dayModeOn = async () => {
   //    const modeChange = await
@@ -23,7 +24,7 @@ function App() {
 
   return (
     <div className="App">
-      <Layout>
+      <Layout dayMode={dayMode} setDayMode={setDayMode}>
         <Routes>
           <Route path="/" exact element={<Main />}></Route>
         </Routes>
