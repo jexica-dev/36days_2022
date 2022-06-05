@@ -2,7 +2,7 @@
 
 **#36daysoftype** is a portfolio website designed for a collection of letters created for the online challenge: #36daysoftype 2022.
 
-[Deployed](https://website.com/)
+[Deployed](https://36daysoftype22.netlify.app/)
 
 <br>
 
