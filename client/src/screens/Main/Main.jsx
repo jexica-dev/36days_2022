@@ -5,7 +5,6 @@ import ButtonMain from "../../components/ButtonMain/ButtonMain";
 import * as colorClasses from "../../utils/colorClassesDay";
 
 export default function Main(props) {
-
   // let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("").reverse().join("");
   // let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("").reverse().join("");
   // let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -31,7 +30,7 @@ export default function Main(props) {
   }
   return (
     <>
-      <div className="w-10/12 px-10 mx-15 py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+      <div className="w-screen px-32 mx-15 py-10 pb-40 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 h-screen overflow-scroll">
         {letterBtns}
       </div>
     </>

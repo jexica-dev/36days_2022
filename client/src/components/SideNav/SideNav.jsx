@@ -20,6 +20,7 @@ export default function SideNav(props) {
         <ul>
           <li
             style={styles}
+            className="w-24 h-24"
             key="a"
             onClick={() => {
               props.setDayMode((prevState) => !prevState);
@@ -34,6 +35,7 @@ export default function SideNav(props) {
             key="b"
             onMouseEnter={() => setIsShown(false)}
             onMouseLeave={() => setIsShown(true)}
+            className="w-24 h-24"
           >
             <Link to="/about">
               {isShown ? <span class="text-6xl">💭</span> : "💬"}
