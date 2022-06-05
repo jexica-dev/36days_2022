@@ -1,14 +1,14 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 import LetterContainer from "../../components/LetterContainer/LetterContainer";
 
-export default function Letter() {
+export default function Letter(props) {
+  let { letter_id } = useParams();
   return (
     <>
-      <div className="w-auto h-3/4 flex py-16">
-        <div>
-          <LetterContainer />
-        </div>
-      </div>
+      <LetterContainer
+        letterPage={letter_id}
+      />
     </>
   );
 }

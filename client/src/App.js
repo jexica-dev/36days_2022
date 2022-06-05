@@ -13,13 +13,9 @@ function App() {
     <div className="App">
       <Layout dayMode={dayMode} setDayMode={setDayMode}>
         <Routes>
-          <Route path="/" exact element={<Main dayMode={dayMode} />}></Route>
-        </Routes>
-        <Routes>
-          <Route path="/letter" exact element={<Letter />}></Route>
-        </Routes>
-        <Routes>
-          <Route path="/about" exact element={<About />}></Route>
+          <Route path="/" exact element={<Main dayMode={dayMode} />}/>
+          <Route path="/letter/:letter_id" element={<Letter />}/>
+          <Route path="/about" exact element={<About />}/>
         </Routes>
       </Layout>
     </div>

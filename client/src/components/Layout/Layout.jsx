@@ -9,7 +9,7 @@ export default function Layout(props) {
     bgColor = "bg-black ";
   }
   return (
-    <div className={bgColor + "w-full h-full"}>
+    <div className={bgColor + "w-full h-5/6"}>
       <SideNav dayMode={props.dayMode} setDayMode={props.setDayMode} />
 
       {props.children}
