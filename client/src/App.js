@@ -7,26 +7,13 @@ import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
-  const [dayMode, setDayMode] = useState(true);
-
-  
-  // useEffect(() => {
-  //   const dayModeOn = async () => {
-  //    const modeChange = await
-  //  }
-
-  // first;
-
-  // return () => {
-  //   second;
-  //   // };
-  // }, []);
+  const [dayMode, setDayMode] = useState(false);
 
   return (
     <div className="App">
       <Layout dayMode={dayMode} setDayMode={setDayMode}>
         <Routes>
-          <Route path="/" exact element={<Main />}></Route>
+          <Route path="/" exact element={<Main dayMode={dayMode} />}></Route>
         </Routes>
         <Routes>
           <Route path="/letter" exact element={<Letter />}></Route>

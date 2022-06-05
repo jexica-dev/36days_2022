@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 export default function SideNav(props) {
   const [isShown, setIsShown] = useState(true);
-  const [isShown1, setIsShown1] = useState(true);
   const [darkModeHovered, setDarkModeHovered] = useState(false);
 
   let dayShown = props.dayMode;
@@ -11,11 +10,16 @@ export default function SideNav(props) {
     dayShown = !dayShown;
   }
 
+  let styles = {
+    cursor: "pointer",
+  };
+
   return (
     <>
       <div className="absolute m-auto right-0 z-100 py-14 px-16 leading-relaxed">
         <ul>
           <li
+            style={styles}
             key="a"
             onClick={() => {
               props.setDayMode((prevState) => !prevState);
@@ -24,17 +28,15 @@ export default function SideNav(props) {
             onMouseEnter={() => setDarkModeHovered(true)}
             onMouseLeave={() => setDarkModeHovered(false)}
           >
-            <Link to="">
-              {dayShown ? <span class="text-6xl">☀️</span> : "🌖"}
-            </Link>
+            {dayShown ? <span class="text-6xl">☀️</span> : "🌖"}
           </li>
           <li
             key="b"
-            onMouseEnter={() => setIsShown1(false)}
-            onMouseLeave={() => setIsShown1(true)}
+            onMouseEnter={() => setIsShown(false)}
+            onMouseLeave={() => setIsShown(true)}
           >
             <Link to="/about">
-              {isShown1 ? <span class="text-6xl">💭</span> : "💬"}
+              {isShown ? <span class="text-6xl">💭</span> : "💬"}
             </Link>
           </li>
         </ul>
