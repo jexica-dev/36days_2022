@@ -3,6 +3,7 @@ module.exports = {
   theme: {
     backgroundColor: (theme) => ({
       yellow: "#FFE715",
+      yellow100: "#ffff94",
       chartreuse: "#A7DF06",
       prp: "#704DFF",
       magenta: "#B415FF",

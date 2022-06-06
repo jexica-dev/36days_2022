@@ -10,17 +10,14 @@ export default function SideNav(props) {
     dayShown = !dayShown;
   }
 
-  let styles = {
-    cursor: "pointer",
-  };
+
 
   return (
     <>
       <div className="absolute m-auto right-0 z-100 py-14 px-16 leading-relaxed">
         <ul>
           <li
-            style={styles}
-            className="w-24 h-24"
+            className="w-24 h-24 cursor-pointer"
             key="a"
             onClick={() => {
               props.setDayMode((prevState) => !prevState);
