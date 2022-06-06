@@ -33,9 +33,9 @@ export const buttonClasses = [
   buttonRed,
   buttonOrange,
   buttonGreen,
-  buttonBlue,
+  buttonMagenta,
   buttonChartreuse,
   buttonRed,
+  buttonBlue,
   buttonCyan,
-  buttonMagenta,
 ];
