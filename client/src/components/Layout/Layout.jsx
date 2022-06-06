@@ -15,7 +15,7 @@ export default function Layout(props) {
 
       {props.children}
 
-      <div className=" max-w-fit p-5 gap-10 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 bottom-0 left-0 sticky">
+      <div className=" max-w-fit p-5 gap-10 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 bottom-0 left-5 sticky">
         <div>
           <Link to="/">
             <HomeButton dayMode={props.dayMode} setDayMode={props.setDayMode}>

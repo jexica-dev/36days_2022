@@ -3,8 +3,14 @@ import ButtonJexica from "../../components/ButtonJexica/ButtonJexica";
 import ButtonMain from "../../components/ButtonMain/ButtonMain";
 // import HomeButton from "../../components/HomeButton/HomeButton";
 import * as colorClasses from "../../utils/colorClassesDay";
+import { useMediaQuery } from "react-responsive";
 
 export default function Main(props) {
+  const normal = useMediaQuery({
+    query: "(min-width: 1224px)",
+  });
+  const media = useMediaQuery({ query: "(max-width: 1020px)" });
+
   let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   let letterBtns = [];
   let i = 0;
@@ -13,7 +19,7 @@ export default function Main(props) {
   // "w-screen px-32 mx-15 py-10 pb-40 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 h-screen overflow-scroll";
 
   let stylesGrid =
-    " gap-5 pb-40 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 h-screen overflow-scroll overscroll-x-none";
+    " gap-5 mx-15 py-10 px-24 pb-36 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 h-screen overflow-scroll overscroll-x-none";
 
   for (let letter of alphabet) {
     let num = 0;
@@ -27,13 +33,12 @@ export default function Main(props) {
 
     let stylesPadding = {
       paddingLeft: num + "0".concat("px"),
-      paddingRight: "-80px",
       maxWidth: "200px",
-      "@media (maxWidth: 768px)": {
-        paddingLeft: "0px !important",
-        paddingRight: "0px !important",
-      },
     };
+
+    if (media) {
+      stylesPadding = {};
+    }
 
     letterBtns.push(
       <div style={stylesPadding} key={letter}>
@@ -53,7 +58,7 @@ export default function Main(props) {
     <>
       <div className={stylesGrid}>
         {letterBtns}
-        <div>
+        <div className="pl-24 ">
           <ButtonJexica dayMode={props.dayMode} />
         </div>
       </div>
