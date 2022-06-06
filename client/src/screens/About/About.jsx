@@ -6,7 +6,6 @@ export default function About(props) {
     borderBottom: "1px solid black",
   };
 
-  console.log(props.dayMode);
 
   return (
     <>

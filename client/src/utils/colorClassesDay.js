@@ -29,12 +29,13 @@ export const buttonOrange =
 
 export const buttonClasses = [
   buttonYellow,
-  buttonRed,
   buttonPurple,
-  buttonBlue,
-  buttonGreen,
-  buttonCyan,
-  buttonChartreuse,
-  buttonMagenta,
+  buttonRed,
   buttonOrange,
+  buttonGreen,
+  buttonBlue,
+  buttonChartreuse,
+  buttonRed,
+  buttonCyan,
+  buttonMagenta,
 ];

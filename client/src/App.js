@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
-  const [dayMode, setDayMode] = useState(true);
+  const [dayMode, setDayMode] = useState(false);
 
   return (
     <div className="App">
