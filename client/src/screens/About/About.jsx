@@ -1,4 +1,5 @@
 import React from "react";
+import ButtonJexica from "../../components/ButtonJexica/ButtonJexica";
 
 export default function About() {
   let stylesNote = {
@@ -14,11 +15,17 @@ export default function About() {
             className="absolute top-0 right-0 w-full h-5"
           ></div>
           <p className="px-10 py-11 text-left font-medium">
-            Hi! 🌻 I’m Jexica, a creative programmer based in NYC 📍. In
-            response to participating in online’s #36daysoftype, I created this
-            playful website to hold my collection of typographic audio-reactive
-            visuals. Hope you enjoyed my experiments 🧚‍♀️ and stay tuned for more!
+            Hi! 🌻 I’m Jexica, a creative programmer in NYC 📍. Every year I
+            ritually participate in online’s #36daysoftype and for this year's
+            collection, I created this playful website to hold my letters of
+            typographic audio-reactive visuals. Hope you enjoyed my experiments
+            🧚‍♀️ and stay tuned for more!
           </p>
+        </div>
+      </div>
+      <div className="relative h-10">
+        <div className="absolute bottom-0 right-16">
+          <ButtonJexica />
         </div>
       </div>
     </>

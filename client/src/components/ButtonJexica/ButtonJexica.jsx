@@ -1,12 +1,25 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function ButtonJexica(props) {
+  let style = {
+    fontFamily: "ABC Whyte Plus Variable Unlicensed Trial",
+  };
+
+  let textColor = "hover:text-white ";
+  if (!props.dayMode) {
+    textColor = "text-white hover:text-black ";
+  }
+
+  let fontColor =
+    textColor +
+    "whitespace-nowrap rounded-full py-3 pr-14 pl-10 border-2 border-red hover:bg-red";
+
   return (
-    <button
-      onClick={props.onClick}
-      className="rounded-full py-2 px-7 text-black bg-trp border border-primary hover:bg-trp hover:text-primary"
-    >
-      {props.children}
-    </button>
+    <Link to="https://jexica.design/">
+      <button onClick={props.onClick} style={style} className={fontColor}>
+        © jexica
+      </button>
+    </Link>
   );
 }
