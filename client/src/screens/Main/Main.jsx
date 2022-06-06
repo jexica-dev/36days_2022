@@ -1,5 +1,4 @@
-import { React, useState } from "react";
-import { Link } from "react-router-dom";
+import { React } from "react";
 import ButtonJexica from "../../components/ButtonJexica/ButtonJexica";
 import ButtonMain from "../../components/ButtonMain/ButtonMain";
 // import HomeButton from "../../components/HomeButton/HomeButton";

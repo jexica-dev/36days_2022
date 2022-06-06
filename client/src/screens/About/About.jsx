@@ -1,10 +1,12 @@
 import React from "react";
 import ButtonJexica from "../../components/ButtonJexica/ButtonJexica";
 
-export default function About() {
+export default function About(props) {
   let stylesNote = {
     borderBottom: "1px solid black",
   };
+
+  console.log(props.dayMode);
 
   return (
     <>
