@@ -6,7 +6,6 @@ export default function About(props) {
     borderBottom: "1px solid black",
   };
 
-
   return (
     <>
       <div className=" w-auto h-3/4 flex py-16">
@@ -17,7 +16,7 @@ export default function About(props) {
           ></div>
           <p className="px-10 py-11 text-left font-medium">
             Hi! 🌻 I’m Jexica, a creative programmer in NYC 📍. Every year I
-            ritually participate in online’s #36daysoftype and for this year's
+            ritually participate in online’s #36daysoftype and for 2022's
             collection, I created this playful website to hold my letters of
             typographic audio-reactive visuals. Hope you enjoyed my experiments
             🧚‍♀️ and stay tuned for more!
