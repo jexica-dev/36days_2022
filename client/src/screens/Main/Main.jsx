@@ -15,10 +15,11 @@ export default function Main(props) {
     overflowStyle: "none",
     scrollbarWidth: "none",
     overscrollBehaviorX: "none",
+    maxWidth: "1300px",
   };
 
   let stylesGrid =
-    " gap-5 mx-15 py-10 px-16 pb-36 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 h-screen w-11/12 overflow-scroll overscroll-x-none";
+    " gap-5 mx-15 py-10 px-16 pb-36 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 h-screen overflow-scroll overscroll-x-none";
 
   for (let letter of alphabet) {
     let num = 0;
