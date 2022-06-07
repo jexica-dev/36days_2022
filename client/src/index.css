@@ -1,7 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @import url("https://api.fontshare.com/css?f[]=clash-grotesk@300,400,500,600,700,800&display=swap");
+
+@font-face {
+  font-family: "ABC Whyte Plus";
+  src: url("./fonts/ABCWhyteInktrapSemi-Mono-Regular-Trial.otf");
+  font-weight: 300, 500, 700;
+}
 
 body {
   margin: 0;
@@ -10,6 +17,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 48px;
+  overflow-x: hidden;
+  overscroll-behavior-x: none;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none;
 }
 
 code {

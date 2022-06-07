@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function ButtonJexica(props) {
   let styleFont = {
-    fontFamily: "ABC Whyte Plus Variable Unlicensed Trial",
+    fontFamily: "ABC Whyte Plus",
   };
 
   let textColor = "text-red hover:text-white ";
@@ -13,17 +13,19 @@ export default function ButtonJexica(props) {
 
   let stylesJexica =
     textColor +
-    " whitespace-nowrap rounded-full py-3 pr-14 pl-10 border-2 border-red hover:bg-red";
+    " font-medium whitespace-nowrap rounded-full py-3 pr-14 pl-10 border-2 border-red hover:bg-red";
 
   return (
-    <Link to="https://jexica.design/">
-      <button
-        onClick={props.onClick}
-        style={styleFont}
-        className={stylesJexica}
-      >
-        © jexica
-      </button>
-    </Link>
+    <>
+      <Link to="https://jexica.design/">
+        <button
+          onClick={props.onClick}
+          style={styleFont}
+          className={stylesJexica}
+        >
+          © jexica
+        </button>
+      </Link>
+    </>
   );
 }
