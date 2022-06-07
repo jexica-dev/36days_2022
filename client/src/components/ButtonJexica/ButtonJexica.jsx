@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 export default function ButtonJexica(props) {
   let styleFont = {
@@ -17,7 +16,7 @@ export default function ButtonJexica(props) {
 
   return (
     <>
-      <Link to="https://jexica.design/">
+      <a href={"https://jexica.design/"}>
         <button
           onClick={props.onClick}
           style={styleFont}
@@ -25,7 +24,7 @@ export default function ButtonJexica(props) {
         >
           © jexica
         </button>
-      </Link>
+      </a>
     </>
   );
 }
